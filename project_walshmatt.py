@@ -157,7 +157,7 @@ def start():
         number = randint(0,20)
         
         while valid == "false":
-            intake = int(input("\tGuess a number between 1 and 20: "))
+            intake = int(input('\t"Now, guess a number between 1 and 20." '))
 
             while intake > 20:
                 intake = int(input("That is not in the range! Guess a number between 1 and 20: "))
@@ -189,7 +189,7 @@ def start():
             number = randint(0,20)
             
             while valid == "false":
-                intake = int(input("\tGuess a number between 1 and 20: "))
+                intake = int(input('\t"Now, guess another number between 1 and 20." '))
 
                 while intake > 20:
                     intake = int(input("That is not in the range! Guess a number between 1 and 20: "))
@@ -220,7 +220,7 @@ def start():
             number = randint(0,20)
             
             while valid == "false":
-                intake = int(input("\tGuess a number between 1 and 20: "))
+                intake = int(input('\t"Now, guess another number between 1 and 20." '))
 
                 while intake > 20:
                     intake = int(input("That is not in the range! Guess a number between 1 and 20: "))
@@ -266,6 +266,8 @@ def main():
 
     if intake == "yes":
         start()
+
+    print("\t\tThanks... for..... playing... :)")
 
 # Start the program
 main()
