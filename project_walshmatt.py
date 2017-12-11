@@ -250,6 +250,7 @@ def main():
 
     valid = "false"
     intake = ""
+    endThis = "no"
     
     while valid == "false":
         intake = input("Would you like to play one more time?: ")
@@ -267,7 +268,11 @@ def main():
     if intake == "yes":
         start()
 
-    print("\t\tThanks... for..... playing... :)")
+    print("Thanks... for.... playing...")
+
+    while endThis == "no":
+        input("Enter anything to end the game: ")
+        endThis = "yes"
 
 # Start the program
 main()
